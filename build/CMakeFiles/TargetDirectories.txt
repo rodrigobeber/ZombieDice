@@ -1,3 +1,0 @@
-/home/rodrigo/learn/cpp/zombie-dice/build/CMakeFiles/zombie-dice.dir
-/home/rodrigo/learn/cpp/zombie-dice/build/CMakeFiles/edit_cache.dir
-/home/rodrigo/learn/cpp/zombie-dice/build/CMakeFiles/rebuild_cache.dir
