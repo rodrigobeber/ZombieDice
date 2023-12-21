@@ -15,9 +15,9 @@ private:
     std::vector<std::unique_ptr<Dice>> getDicesToPlay();
     void fixTube();
 public:
-    unsigned int getBrainsCount();
-    unsigned int getShotGunsCount();
-    unsigned int getFootStepsCount();
+    unsigned int getBrainsCount() const;
+    unsigned int getShotGunsCount() const;
+    unsigned int getFootStepsCount() const;
     Turn (Tube &tube): m_tube{tube} {}
     void rollDices();
 };

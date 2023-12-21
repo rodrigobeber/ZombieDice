@@ -20,7 +20,7 @@ void Game::orderAllPlayers(const Player& initialPlayer) {
     }
 }
 
-std::vector<Player> Game::calcWinners(const std::vector<Player>& players) {
+std::vector<Player> Game::calcWinners(const std::vector<Player>& players) const {
     unsigned int maxBrains = std::max_element(players.begin(), players.end(),
         [](const Player& a, const Player& b) {
             return a.brains < b.brains;

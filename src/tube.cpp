@@ -42,6 +42,6 @@ void Tube::putBack(std::vector<std::unique_ptr<Dice>>& putDices) {
     }
 }
 
-size_t Tube::getNumOfDices() {
+size_t Tube::getNumOfDices() const {
     return m_dices.size();
 }

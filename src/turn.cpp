@@ -3,15 +3,15 @@
 #include <thread>
 #include "turn.h"
 
-unsigned int Turn::getBrainsCount() {
+unsigned int Turn::getBrainsCount() const {
     return m_brainsCount;
 }
 
-unsigned int Turn::getShotGunsCount() {
+unsigned int Turn::getShotGunsCount() const {
     return m_shotGunsCount;
 }
 
-unsigned int Turn::getFootStepsCount() {
+unsigned int Turn::getFootStepsCount() const {
     return m_footSteps.size();
 }
 

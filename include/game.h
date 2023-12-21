@@ -11,7 +11,7 @@ private:
     std::vector<Player> m_allPlayers;
     void reset();
     void orderAllPlayers(const Player& initialPlayer);
-    std::vector<Player> calcWinners(const std::vector<Player>& players);
+    std::vector<Player> calcWinners(const std::vector<Player>& players) const;
     void playTurn(Player &player);
 public:
     Game (std::vector<Player> allPlayers): m_allPlayers(allPlayers) {}
