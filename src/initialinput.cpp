@@ -47,8 +47,7 @@ Player& InitialInput::readInitialPlayer(const std::vector<Player>& players) {
         std::cout << "Type the name of the player who said 'Brain' in the zombiest way: ";
         std::string name;
         std::cin >> name;
-        Player* initialPlayer = InitialInput::getPlayerByName(players, name);
-        if (initialPlayer) {
+        if (Player* initialPlayer = InitialInput::getPlayerByName(players, name); initialPlayer) {
             return *initialPlayer;
         }
         std::cout << "Player not found, try again." << std::endl;
