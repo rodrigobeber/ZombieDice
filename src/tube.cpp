@@ -19,7 +19,7 @@ std::unique_ptr<Dice> Tube::extractDice() {
         throw std::runtime_error("No dices left in the tube");
     }
     std::uniform_int_distribution<std::size_t> dist(0, m_dices.size() - 1);
-    // if not the last one element, swap the the last one
+    // if not the last one element, swap with the last one
     if (std::size_t index = dist(gen); index != m_dices.size() - 1) {
         std::swap(m_dices[index], m_dices.back());
     }
