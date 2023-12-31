@@ -8,7 +8,7 @@ enum class DiceFace {
     Brain, Footsteps, Shotgun
 };
 
-std::string diceFaceToString(DiceFace face);
+std::string_view diceFaceToString(DiceFace face);
 
 class Dice {
 protected:
@@ -17,23 +17,23 @@ protected:
 public:
     virtual ~Dice() = default;
     DiceFace roll();
-    virtual std::string getColorName() const = 0;
+    virtual std::string_view getColorName() const = 0;
 };
 
 class GreenDice : public Dice {
 public:
     GreenDice();
-    std::string getColorName() const override;
+    std::string_view getColorName() const override;
 };
 
 class RedDice : public Dice {
 public:
     RedDice();
-    std::string getColorName() const override;
+    std::string_view getColorName() const override;
 };
 
 class YellowDice : public Dice {
 public:
     YellowDice();
-    std::string getColorName() const override;
+    std::string_view getColorName() const override;
 };

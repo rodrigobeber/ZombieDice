@@ -2,4 +2,4 @@
 
 #include <string>
 
-bool confirm(const std::string& message);
+bool confirm(std::string_view message);

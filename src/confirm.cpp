@@ -2,7 +2,7 @@
 #include <string>
 #include "confirm.h"
 
-bool confirm(const std::string& message) {
+bool confirm(std::string_view message) {
     std::string answer;
     do {
         std::cout << message;

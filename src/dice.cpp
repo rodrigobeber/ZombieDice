@@ -7,7 +7,7 @@ DiceFace Dice::roll() {
     return static_cast<DiceFace>(m_dis(gen));
 }
 
-std::string diceFaceToString(DiceFace face) {
+std::string_view diceFaceToString(DiceFace face) {
     switch (face) {
         case DiceFace::Brain:
             return "BRAIN";
@@ -29,14 +29,14 @@ RedDice::RedDice() : Dice({1, 2, 3}) {
 YellowDice::YellowDice() : Dice({2, 2, 2}) {
 }
 
-std::string GreenDice::getColorName() const {
+std::string_view GreenDice::getColorName() const {
     return "GREEN";
 }
 
-std::string RedDice::getColorName() const {
+std::string_view RedDice::getColorName() const {
     return "RED";
 }
 
-std::string YellowDice::getColorName() const {
+std::string_view YellowDice::getColorName() const {
     return "YELLOW";
 }
